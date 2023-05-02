@@ -1,0 +1,231 @@
+<html>
+
+<head>
+	<title>Menina ou Menino? Vença para descobrir</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="estilo.css">
+	<script src="comeco.js"></script>
+	<script src="hanoi.js"></script> <!-- parte logica do jogo -->
+	<script src="nucleo_grafico.js"></script> <!-- gerencia a parte grafica -->
+</head>
+
+<body>
+	<!-- tela inicial -->
+	<div id="tela_comeco">
+		<div id="logo_comeco" class="cloud"></div>
+	</div>
+
+	<div id="area">
+		<!-- numero de movimentos -->
+		<div class="numero_mov" style="border-right: 2px solid rgba(255,255,255,0.6)">
+			<b class="num_mov" id="num_mov1">0</b> movimentos <!-- quantos movimentos feitos -->
+		</div>
+		<div class="numero_mov">
+			Mínimo: <b class="num_mov" id="num_mov2">0</b> <!-- Número mínimo de movimentos -->
+		</div>
+
+		<!-- Tela de explicacao e definicao dos discos-->
+		<div class="aviso_erro" style="display: block">
+
+			<div id="area_white">
+				<p>A <b>torre de hanói</b> é uma espécie de quebra-cabeça
+					com três pinos e alguns discos, cujo objetivo é transferir
+					todos os discos do <b>primeiro</b> pino para o <b>terceiro</b> pino.<br>
+					A regra principal é <b>"O disco de cima não pode ser maior que o de baixo"</b>
+				</p>
+				<p>Você deve mover um disco de cada vez para qualquer pino, basta
+					clicar no disco e depois clicar na cor correspodente:
+					<span style="color: #da67e6c1">Rosa</span>,
+					<span style="color: #25d3fa9c">Azul</span> ou
+					<span style="color: #429818">Verde</span>.
+					<br>
+					Escolha o número de discos:
+					<!-- botoes de escolha -->
+					<button class="bu" onclick="iniciar(3)">3</button>
+					<button class="bu" onclick="iniciar(4)">4</button>
+					<button class="bu" onclick="iniciar(5)">5</button>
+					<button class="bu" onclick="iniciar(6)">6</button>
+					<button class="bu" onclick="iniciar(7)">7</button>
+					<!-- ////////////////// -->
+				</p>
+				<!-- imagem exemplo do aviso inicial -->
+				<div id="imagem_int"></div>
+
+			</div>
+		</div>
+
+		<!-- Aviso erro -->
+		<div class="aviso_erro">
+			<div id="aviso_t">
+				<!-- botao de sair de aviso -->
+				<button id="bx" onclick="sair()"><b>X</b></button>
+				<br>
+				<p id="aviso_texto"></p>
+			</div>
+		</div>
+		<!-- ///////////// -->
+
+		<!-- PRIMEIRO PINO -->
+		<div class="area_int" style="width: 33%; left: 0%; background-color:  #da67e6c1">
+
+			<div id="espaco1"></div>
+			<!-- disco 1 -->
+			<div id="disco1_1" class="comp_disco">
+				<button onclick="definir_disco(1,1)" class="disco disco1Cor" style="width: 20%;">
+					<b class="px" id="disconum1_1"></b>
+				</button>
+			</div>
+			<!-- disco 2 -->
+			<div id="disco2_1" class="comp_disco">
+				<button onclick="definir_disco(2,1)" class="disco disco2Cor" style="width: 30%;">
+					<b class="px" id="disconum2_1"></b>
+				</button>
+			</div>
+			<!-- disco 3 -->
+			<div id="disco3_1" class="comp_disco">
+				<button onclick="definir_disco(3,1)" class="disco disco3Cor" style="width: 40%;">
+					<b class="px" id="disconum3_1"></b>
+				</button>
+			</div>
+			<!-- disco 4 -->
+			<div id="disco4_1" class="comp_disco">
+				<button onclick="definir_disco(4,1)" class="disco disco4Cor" style="width: 50%;">
+					<b class="px"id="disconum4_1"></b>
+				</button>
+			</div>
+			<!-- disco 5 -->
+			<div id="disco5_1" class="comp_disco">
+				<button onclick="definir_disco(5,1)" class="disco disco5Cor" style="width: 60%;">
+					<b class="px"id="disconum5_1"></b>
+				</button>
+			</div>
+			<!-- disco 6 -->
+			<div id="disco6_1" class="comp_disco">
+				<button onclick="definir_disco(6,1)" class="disco disco6Cor" style="width: 70%;">
+					<b class="px"id="disconum6_1"></b>
+				</button>
+			</div>
+			<!-- disco 7 -->
+			<div id="disco7_1" class="comp_disco">
+				<button onclick="definir_disco(7,1)" class="disco disco7Cor" style="width: 80%;">
+					<b class="px" id="disconum7_1"></b>
+				</button>
+			</div>
+
+			<div class="haste" onclick="definir_pino(1)"></div>
+
+			<!-- definir pino de destino / nucleo_grafico.js -->
+			<button class="definir_botao" onclick="definir_pino(1)"></button>
+		</div>
+
+		<!-- SEGUNDO PINO -->
+		<div class="area_int" style="width: 34%; left: 33%; background-color: #25d3fa9c">
+			<div id="logo"></div>
+			<div id="espaco2"></div>
+			<!-- disco 1 -->
+			<div id="disco1_2" class="comp_disco">
+				<button onclick="definir_disco(1,2)" class="disco disco1Cor" style="width: 20%">
+					<b class="px" id="disconum1_2"></b>
+				</button>
+			</div>
+			<!-- disco 2 -->
+			<div id="disco2_2" class="comp_disco">
+				<button onclick="definir_disco(2,2)" class="disco disco2Cor" style="width: 30%;">
+					<b class="px" id="disconum2_2"></b>
+				</button>
+			</div>
+			<!-- disco 3 -->
+			<div id="disco3_2" class="comp_disco">
+				<button onclick="definir_disco(3,2)" class="disco disco3Cor" style="width: 40%;">
+					<b class="px" id="disconum3_2"></b>
+				</button>
+			</div>
+			<!-- disco 4 -->
+			<div id="disco4_2" class="comp_disco">
+				<button onclick="definir_disco(4,2)" class="disco disco4Cor" style="width: 50%;">
+					<b class="px" id="disconum4_2"></b>
+				</button>
+			</div>
+			<!-- disco 5 -->
+			<div id="disco5_2" class="comp_disco">
+				<button onclick="definir_disco(5,2)" class="disco disco5Cor" style="width: 60%;">
+					<b class="px" id="disconum5_2"></b>
+				</button>
+			</div>
+			<!-- disco 6 -->
+			<div id="disco6_2" class="comp_disco">
+				<button onclick="definir_disco(6,2)" class="disco disco6Cor" style="width: 70%;">
+					<b class="px" id="disconum6_2"></b>
+				</button>
+			</div>
+			<!-- disco 7 -->
+			<div id="disco7_2" class="comp_disco">
+				<button onclick="definir_disco(7,2)" class="disco disco7Cor" style="width: 80%;">
+					<b class="px" id="disconum7_2"></b>
+				</button>
+			</div>
+
+			<div class="haste" onclick="definir_pino(2)"></div>
+
+			<!-- definir pino de destino / nucleo_grafico.js -->
+			<button class="definir_botao" onclick="definir_pino(2)"></button>
+		</div>
+
+		<!-- TERCEIRO PINO -->
+		<div class="area_int" style="width: 33%; left: 67%; background-color: #429818">
+
+			<div id="espaco3"></div>
+			<!-- disco 1 -->
+			<div id="disco1_3" class="comp_disco">
+				<button onclick="definir_disco(1,3)" class="disco disco1Cor" style="width: 20%">
+					<b class="px" id="disconum1_3"></b>
+				</button>
+			</div>
+			<!-- disco 2 -->
+			<div id="disco2_3" class="comp_disco">
+				<button onclick="definir_disco(2,3)" class="disco disco2Cor" style="width: 30%;">
+					<b class="px" id="disconum2_3"></b>
+				</button>
+			</div>
+			<!-- disco 3 -->
+			<div id="disco3_3" class="comp_disco">
+				<button onclick="definir_disco(3,3)" class="disco disco3Cor" style="width: 40%;">
+					<b class="px" id="disconum3_3"></b>
+				</button>
+			</div>
+			<!-- disco 4 -->
+			<div id="disco4_3" class="comp_disco">
+				<button onclick="definir_disco(4,3)" class="disco disco4Cor" style="width: 50%;">
+					<b class="px" id="disconum4_3"></b>
+				</button>
+			</div>
+			<!-- disco 5 -->
+			<div id="disco5_3" class="comp_disco">
+				<button onclick="definir_disco(5,3)" class="disco disco5Cor" style="width: 60%;">
+					<b class="px" id="disconum5_3"></b>
+				</button>
+			</div>
+			<!-- disco 6 -->
+			<div id="disco6_3" class="comp_disco">
+				<button onclick="definir_disco(6,3)" class="disco disco6Cor" style="width: 70%;">
+					<b class="px" id="disconum6_3"></b>
+				</button>
+			</div>
+			<!-- disco 7 -->
+			<div id="disco7_3" class="comp_disco">
+				<button onclick="definir_disco(7,3)" class="disco disco7Cor" style="width: 80%;">
+					<b class="px" id="disconum7_3"></b>
+				</button>
+			</div>
+
+			<div class="haste" onclick="definir_pino(3)"></div>
+
+			<!-- definir pino de destino / nucleo_grafico.js -->
+			<button class="definir_botao" onclick="definir_pino(3)"></button>
+		</div>
+
+	</div>
+	<script src="gerar_graficos.js"></script> <!-- gera os discos -->
+</body>
+
+</html>

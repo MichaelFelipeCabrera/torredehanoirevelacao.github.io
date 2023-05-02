@@ -1,0 +1,309 @@
+
+#area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.area_int {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+
+.haste {
+    width: 20%;
+    height: 80%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.disco {
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 8px 8px 0px 0px;
+    outline: none;
+    border: none;
+}
+
+.disco:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 1px 5px rgba(0, 0, 0, 0.8) inset;
+    font-size: 20px;
+}
+
+.comp_disco {
+    width: 100%;
+    height: 13%;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.px {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -50%);
+    font-family: Arial;
+    font-size: 30px;
+}
+
+
+#espaco1,
+#espaco2,
+#espaco3 {
+    width: 100%;
+    height: 9%;
+    position: relative;
+}
+
+.aviso_erro {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+
+
+#aviso_t {
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    border-radius: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 10px;
+    z-index: 5;
+}
+
+#bx {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    outline: none;
+}
+
+
+#bx:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+#logo {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%, 0%);
+    background-image: url(Inicio.png);
+    background-size: 100%;
+    background-repeat: no-repeat;    
+}
+
+#area_white {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 20px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.bu {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: width 0.1s, height 0.1s;
+}
+
+.bu:hover {
+    width: 45px;
+    height: 45px;
+    background-color: #ff6000;
+}
+
+.numero_mov {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    font-family: Arial;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    top: 0px;
+    left: 0px;
+}
+
+.num_mov {
+    color: rgba(255, 255, 255, 1);
+}
+
+#reini {
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #B22222;
+    color: #ffffff;
+}
+
+.definir_botao {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#tela_comeco {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 8;
+    position: absolute;
+    background: linear-gradient(135deg, #c73ff0fe, #0413ee);
+    display: block;
+}
+
+#logo_comeco  {
+    width: 900px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-size: 100% 100%;
+    background-image: url(Inicio.png);
+    filter: blur(4px);
+    transition: filter 0.2s;
+}
+.cloud {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+
+#imagem_int {
+    width: 600px;
+    height: 245px;
+    background-color: #000000;
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    background-image: url(exemplo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.imagem-revelado {  
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    background: linear-gradient(245deg, rgb(250 250 250), #06fff3);
+    display: block;
+  }
+  
+.disco1Cor {
+    background-color: rgba(30, 253, 0, 0.618);
+}
+.disco2Cor {
+    background-color: rgba(255, 0, 0, 0.673);
+}
+
+.disco3Cor {
+    background-color: rgba(0, 255, 21, 0.658);
+}
+
+.disco4Cor {
+    background-color: rgba(60, 0, 255, 0.621);
+}
+
+.disco5Cor {
+    background: linear-gradient(218deg, #c73ff0fe, #0413ee);
+}
+
+.disco6Cor {
+    background: linear-gradient(218deg, #3fdef0f7, #ee0404);
+}
+
+.disco7Cor {
+    background: linear-gradient(218deg, #3fdef0f7, #ee04d9);
+}
+
+@media only screen and (max-width: 900px) {
+
+    #imagem_int {
+        display: none;
+    }
+
+    #area_white {
+        width: 90%;
+        height: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
