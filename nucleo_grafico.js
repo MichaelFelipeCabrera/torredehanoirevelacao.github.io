@@ -69,7 +69,7 @@ function definir_pino(num) {
                aviso.innerHTML = "";
 
                var img = document.createElement("img");
-               img.src = "/revelado.png";               
+               img.src = "revelado.png";               
                img.classList.add("imagem-revelado");               
                aviso.appendChild(img);
                var paragrafo = document.createElement("p");
