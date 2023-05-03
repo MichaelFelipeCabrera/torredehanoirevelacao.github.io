@@ -454,5 +454,46 @@
 
 /* iPhone 7 e 8 */
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    /* Estilos para iPhone 7 e 8 */
+    #logo_comeco {
+        width: 800px;
+        height: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-size: 100% 100%;
+    }
+
+    #imagem_int {
+        width: 631px;
+        height: 351px;
+    
+    }
+
+    #logo {
+        width: 976px;
+        height: 1000px;
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 0rem;
+        transform: translate(-50%, 0%);
+    }
+
+    #area_white {
+        width: 91%;
+        height: 32%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .haste {
+        height: 59%;
+    }
+
+    #aviso_t {
+        width: 100%;
+        height: auto;
+    }
 }
