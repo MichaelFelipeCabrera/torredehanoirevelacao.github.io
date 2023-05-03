@@ -393,11 +393,11 @@
         transform: translate(-50%, -50%);
         position: absolute;
         background-size: 100% 100%;
-    }
+    }    
 
     #imagem_int {
         width: 783px;
-        height: 434px;
+        height: 433px;
     }
 
     #logo {
