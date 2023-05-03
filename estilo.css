@@ -310,7 +310,7 @@
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 
     /* Estilos para o iPhone 12 */
-    #area{
+    /* #area{
         transform: rotate(90deg);
         transform-origin: top left;
         width: 100vh;
@@ -318,7 +318,7 @@
         position: fixed;
         top: 0;
         left: 0;
-    }
+    } */
     #logo_comeco {
         width: 800px;
         height: 600px;
@@ -341,10 +341,7 @@
         position: absolute;
         left: 50%;
         top: 0rem;
-        transform: translate(-50%, 0%);
-        background-image: url(Inicio.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
+        transform: translate(-50%, 0%);        
     }
 
     #area_white {       
@@ -357,5 +354,50 @@
 
     .haste{
         height: 43%;
+    }
+    #aviso_t{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (device-width: 844px) and (device-height: 390px) and (-webkit-device-pixel-ratio: 3) {
+
+    /* Estilos para o iPhone 12 */
+    /* #area{
+        transform: rotate(90deg);
+        transform-origin: top left;
+        width: 100vh;
+        overflow-x: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+    } */
+
+    #logo_comeco {
+       
+    }
+    #area_white {  
+        width: 63%;
+        height: 90%;           
+    }
+
+    #imagem_int {
+        width: 392px;
+        height: 212px;      
+    }
+
+    #logo {
+        width: 260px;
+        height: 260px;
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 0rem;
+        transform: translate(-50%, 0%);         
+    }   
+
+    .haste{
+        
     }
 }
