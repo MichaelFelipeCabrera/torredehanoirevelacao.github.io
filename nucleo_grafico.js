@@ -55,7 +55,7 @@ function definir_pino(num) {
                var paragrafo = document.createElement("p");
                paragrafo.innerHTML = "VOCÊ CONSEGUIU, PARABÉNS!!!<br>" +
                                      "MAS ACHOU QUE SERIA FACIL É? <br>"+
-                                     "PARA DESCOBRIR O SEXO DO BEBÊ, TEM SER PERFEITO, VOCÊ GASTOU <b>" + movimentos + "</b> MOVIMENTOS<br>" +
+                                     "PARA DESCOBRIR O SEXO DO BEBÊ, TEM QUE SER PERFEITO, VOCÊ GASTOU <b>" + movimentos + "</b> MOVIMENTOS<br>" +
                                      "FAÇA EM <b>" + (Math.pow(2, numeross) - 1) + " MOVIMENTOS, E DESCUBRIRÁ! </b><br>";
                aviso.appendChild(paragrafo);
                
