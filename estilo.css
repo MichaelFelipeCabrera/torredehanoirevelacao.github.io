@@ -310,7 +310,7 @@
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 
     /* Estilos para o iPhone 12 */
-    /* #area{
+    #area{
         transform: rotate(90deg);
         transform-origin: top left;
         width: 100vh;
@@ -318,7 +318,7 @@
         position: fixed;
         top: 0;
         left: 0;
-    } */
+    }
     #logo_comeco {
         width: 800px;
         height: 600px;
