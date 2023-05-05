@@ -298,8 +298,8 @@
 /* iPhone X, XS, XR e 11 */
 @media only screen and (min-width: 374px) {
     /* Estilos para dispositivos com largura de tela entre 375px e 414px */
-   
-     #logo_comeco  {        
+
+    #logo_comeco {
         width: 800px;
         height: 600px;
         top: 50%;
@@ -312,7 +312,7 @@
     #imagem_int {
         width: 73%;
         height: 21vh;
-        padding: 0;    
+        padding: 0;
     }
 
     #logo {
@@ -343,30 +343,54 @@
         height: auto;
     }
 
-    .imagem-revelado{
+    .imagem-revelado {
         width: 94%;
     }
 }
 
 
 /* iPhone XR e 11 */
-@media only screen and (min-width: 414px) { 
+@media only screen and (min-width: 414px) {
+    #area_white {
+        width: 86%;
+        height: 30%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .imagem-revelado {
+        width: 94%;
+    }
+    #aviso_t {
+        width: 80%;
+        height: auto;
+    }
+    #imagem_int {
+        width: 86%;
+        height: 20vh;
+
+        padding: 0;
+    }
+
     #imagem_int {
         width: 92%;
-        height: 22vh;       
-        padding: 0;    
-    }               
-  }
-  @media only screen and (min-width: 900px) {
+        height: 22vh;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
     #imagem_int {
         width: 53%;
         height: 46vh;
         padding: 0;
-    }   
+    }
+
     #logo {
         width: 375px;
         height: 212px;
     }
+
     #area_white {
         width: 90%;
         height: 80%;
@@ -374,40 +398,34 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-} 
-  /* iPhone 12 e 12 Pro */
-  @media only screen and (min-width: 844px) and (max-width: 926px) {
+}
+
+/* iPhone 12 e 12 Pro */
+@media only screen and (min-width: 844px) and (max-width: 926px) {
     /* Estilos para dispositivos com largura de tela entre 844px e 926px */
-  }
-  
-  /* iPhone 12 Mini */
-  @media only screen and (min-width: 360px) and (max-width: 390px) {
+}
+
+/* iPhone 12 Mini */
+@media only screen and (min-width: 360px) and (max-width: 390px) {
     /* Estilos para dispositivos com largura de tela entre 360px e 390px */
-  }
-  
-  /* iPhone 12, 12 Pro e 13 */
+}
+
+/* iPhone 12, 12 Pro e 13 */
 @media only screen and (min-width: 926px) and (max-width: 1170px) {
     /* Estilos para dispositivos com largura de tela entre 926px e 1170px */
-  }
-  
-  /* iPhone 12 Mini e 13 Mini */
-  @media only screen and (min-width: 390px) and (max-width: 435px) {
+}
+
+/* iPhone 12 Mini e 13 Mini */
+@media only screen and (min-width: 390px) and (max-width: 435px) {
     /* Estilos para dispositivos com largura de tela entre 390px e 435px */
-  }
-  
-  /* iPhone 12 Pro Max e 13 Pro Max */
-  @media only screen and (min-width: 1284px) and (max-width: 1284px) {
+}
+
+/* iPhone 12 Pro Max e 13 Pro Max */
+@media only screen and (min-width: 1284px) and (max-width: 1284px) {
     /* Estilos para dispositivos com largura de tela de 1284px */
-  }
-  
-  /* iPhone 14 */
-  @media only screen and (min-width: 1170px) {
+}
+
+/* iPhone 14 */
+@media only screen and (min-width: 1170px) {
     /* Estilos para dispositivos com largura de tela acima de 1170px */
-  }
-  
-
-
-
-
-
-
+}
