@@ -379,7 +379,7 @@
     }
 }
 
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
     #imagem_int {
         width: 53%;
         height: 46vh;
@@ -398,7 +398,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-}
+} */
 
 /* iPhone 12 e 12 Pro */
 @media only screen and (min-width: 844px) and (max-width: 926px) {
