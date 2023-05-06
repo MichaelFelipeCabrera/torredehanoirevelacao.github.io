@@ -244,7 +244,6 @@
 #imagem_int {
     width: 542px;
     height: 310px;
-    background-color: #000000;
     position: relative;
     transform: translate(-50%, 0%);
     left: 50%;
@@ -295,18 +294,10 @@
 
 
 
-/* iPhone X, XS, XR e 11 */
-@media only screen and (min-width: 374px) {
-    /* Estilos para dispositivos com largura de tela entre 375px e 414px */
-
+@media only screen and (min-width: 375px){
     #logo_comeco {
         width: 800px;
-        height: 600px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        background-size: 100% 100%;
+        height: 600px;       
     }
 
     #imagem_int {
@@ -317,20 +308,14 @@
 
     #logo {
         width: 970px;
-        height: 629px;
+        height: 545px;
         z-index: 2;
-        position: absolute;
-        left: 50%;
         top: 0rem;
-        transform: translate(-50%, 0%);
     }
 
     #area_white {
-        width: 91%;
-        height: 32%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        width: 90%;
+        height: auto;  
     }
 
     .haste {
@@ -339,8 +324,7 @@
     }
 
     #aviso_t {
-        width: 80%;
-        height: auto;
+        width: 93%;
     }
 
     .imagem-revelado {
@@ -348,84 +332,77 @@
     }
 }
 
-
-/* iPhone XR e 11 */
-@media only screen and (min-width: 414px) {
-    #area_white {
-        width: 86%;
-        height: 30%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .imagem-revelado {
-        width: 94%;
-    }
-    #aviso_t {
-        width: 80%;
-        height: auto;
-    }
-    #imagem_int {
-        width: 86%;
-        height: 20vh;
-
-        padding: 0;
-    }
-
-    #imagem_int {
-        width: 92%;
-        height: 22vh;
-        padding: 0;
-    }
-}
-
-/* @media only screen and (min-width: 900px) {
-    #imagem_int {
-        width: 53%;
-        height: 46vh;
-        padding: 0;
-    }
-
+@media only screen and (min-width: 414px){
     #logo {
-        width: 375px;
-        height: 212px;
+        width: 808px;
+        height: 592px;
+        z-index: 2;
+        top: 0rem;
+    }
+    #logo_comeco {
+        width: 800px;
+        height: 600px;       
+    }
+
+    #imagem_int {
+        width: 85%;
+        height: 21vh;
+        padding: 0;
     }
 
     #area_white {
         width: 90%;
-        height: 80%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        height: auto;  
     }
-} */
 
-/* iPhone 12 e 12 Pro */
-@media only screen and (min-width: 844px) and (max-width: 926px) {
-    /* Estilos para dispositivos com largura de tela entre 844px e 926px */
+    .haste {
+        height: 64%;
+        width: 23%;
+    }
+
+    #aviso_t {
+        width: 93%;
+    }
+
+    .imagem-revelado {
+        width: 94%;
+    }
 }
 
-/* iPhone 12 Mini */
-@media only screen and (min-width: 360px) and (max-width: 390px) {
-    /* Estilos para dispositivos com largura de tela entre 360px e 390px */
+@media only screen and (min-width: 667px){
+    #logo {
+        width: 353px;
+        height: 196px;
+        z-index: 2;
+        top: 0rem;
+    }
+    #logo_comeco {
+        width: 80%;
+        height: 70%;       
+    }
+
+    #imagem_int {
+        width: 54%;
+        height: 52vh;
+        padding: 0;
+    }
+
+    #area_white {
+        width: 90%;
+        height: 80%; 
+    }
+
+    .haste {
+        height: 64%;
+        width: 23%;
+    }
+
+    #aviso_t {
+        width: 62%;
+    }
+
+    .imagem-revelado {
+        width: 100%;
+    }
 }
 
-/* iPhone 12, 12 Pro e 13 */
-@media only screen and (min-width: 926px) and (max-width: 1170px) {
-    /* Estilos para dispositivos com largura de tela entre 926px e 1170px */
-}
-
-/* iPhone 12 Mini e 13 Mini */
-@media only screen and (min-width: 390px) and (max-width: 435px) {
-    /* Estilos para dispositivos com largura de tela entre 390px e 435px */
-}
-
-/* iPhone 12 Pro Max e 13 Pro Max */
-@media only screen and (min-width: 1284px) and (max-width: 1284px) {
-    /* Estilos para dispositivos com largura de tela de 1284px */
-}
-
-/* iPhone 14 */
-@media only screen and (min-width: 1170px) {
-    /* Estilos para dispositivos com largura de tela acima de 1170px */
-}

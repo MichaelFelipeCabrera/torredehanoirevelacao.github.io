@@ -1,0 +1,49 @@
+/* reset.css */
+
+/* Definindo a fonte padrão como sans-serif */
+body {
+    font-family: sans-serif;
+  }
+  
+  /* Removendo a margem padrão do body */
+  body {
+    margin: 0;
+  }
+  
+  /* Removendo o padding padrão do body */
+  body {
+    padding: 0;
+  }
+  
+  /* Definindo a caixa de modelo como border-box para todos os elementos */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Removendo a lista de estilos padrão do ul */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Removendo a decoração de link padrão */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Definindo a cor padrão do link */
+  a {
+    color: #333;
+  }
+  
+  /* Removendo a borda padrão dos botões */
+  button {
+    border: none;
+  }
+  
+  /* Removendo a borda padrão das imagens */
+  img {
+    border: none;
+  }
+  
