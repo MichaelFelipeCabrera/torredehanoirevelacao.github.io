@@ -369,40 +369,5 @@
     }
 }
 
-@media only screen and (min-width: 667px){
-    #logo {
-        width: 353px;
-        height: 196px;
-        z-index: 2;
-        top: 0rem;
-    }
-    #logo_comeco {
-        width: 80%;
-        height: 70%;       
-    }
 
-    #imagem_int {
-        width: 54%;
-        height: 52vh;
-        padding: 0;
-    }
-
-    #area_white {
-        width: 90%;
-        height: 80%; 
-    }
-
-    .haste {
-        height: 64%;
-        width: 23%;
-    }
-
-    #aviso_t {
-        width: 62%;
-    }
-
-    .imagem-revelado {
-        width: 100%;
-    }
-}
 
