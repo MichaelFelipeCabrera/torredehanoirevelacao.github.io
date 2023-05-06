@@ -294,10 +294,10 @@
 
 
 
-@media only screen and (min-width: 375px){
+@media only screen and (min-width: 375px) {
     #logo_comeco {
         width: 800px;
-        height: 600px;       
+        height: 600px;
     }
 
     #imagem_int {
@@ -329,19 +329,21 @@
 
     .imagem-revelado {
         width: 84%;
+        height: 24vh;
     }
 }
 
-@media only screen and (min-width: 414px){
+@media only screen and (min-width: 414px) {
     #logo {
         width: 808px;
         height: 592px;
         z-index: 2;
         top: 0rem;
     }
+
     #logo_comeco {
         width: 800px;
-        height: 600px;       
+        height: 600px;
     }
 
     #imagem_int {
@@ -366,8 +368,6 @@
 
     .imagem-revelado {
         width: 84%;
+        height: 24vh;
     }
 }
-
-
-
